@@ -1,0 +1,103 @@
+<html>
+<head>
+<metacharset="utf-8">
+<link rel="stylesheet" href="style.css"/>
+<title> Formulaire </title>
+</head>
+<body>
+<h1> Formulaire </h1>
+<h2>
+<form action="/page-traitement-donnees" method="post">
+<div>
+
+</h2>
+<h4>
+<table>
+
+<form action="/page-traitement-donnees" method="post">
+<div>
+<label for="nom">Pseudo*</label>
+<input type="text" id="nom" name="t1" placeholder="Pseudo123" required>
+</div>
+<div>
+<label for="nom">Mot de passe</label>
+<input type="text" id="password" name="t2" placeholder="Mdp123">
+</div>
+<div>
+<label for="nom">Prénom</label>
+<input type="text" id="nom" name="nom" placeholder="Prénom">
+</div>
+<div>
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="adresse@mail.com">
+</div>
+<div>
+<label for="email">Avatar</label>
+<input type="file" id="avatar" name="avatar">
+</div>
+<div>
+<label for="sujet">Pays</label>
+<select name="sujet" id="sujet">
+<option value="es">Espagne</option>
+<option value="fr">France</option>
+<option value="uk">Royaume-Uni</option>
+<option value="us">Amérique</option>
+<option value="autre">Autre</option>
+</select>
+</div>
+<div>
+ <legend>Quel sont vos fruits préférés?</legend>
+    <input type="checkbox" id="orange" name="c1"/>
+    <label for="orange">Orange</label>
+    <input type="checkbox" id="fraise" name="c1" />
+    <label for="fraise">Fraise</label>
+    <input type="checkbox" id="poire" name="c1" />
+    <label for="poire">Poire</label>
+</div>
+<div>
+ <legend>Civilité</legend>
+    <input type="radio" id="homme" name="r1"/>
+    <label for="homme">Homme</label>
+    <input type="radio" id="femme" name="r1" />
+    <label for="femme">Femme</label>
+</div>
+<div>
+</div>
+<div>
+<label for="nom">Ville</label>
+<input type="text" id="nom" name="nom" placeholder="Paris">
+</div>
+<div>
+<label for="nom">Code Postal</label>
+<input type="text" id="nom" name="nom" placeholder="Code postal">
+</div>
+<div>
+<label for="message">Adresse</label>
+<textarea id="message" name="message" placeholder="2 Résidence..."></textarea>
+</div>
+<div>
+<label for="date">Date</label>
+<input type="date" id="date" name="d1">
+</div>
+<div>
+<label for="range">Jauge</label>
+    <input type="range" id="jauge" value="90">
+</div>
+<div>
+<label for="phone">Téléphone</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+</div>
+<div>
+   <label for="colorpicker">Couleur:</label>
+   <input type="color" id="colorpicker" value="#000000">
+</div>
+<div>
+<button type="button">Valider</button>
+</div>
+</form>
+</div>
+<br>
+<a href=index.html> Retour </a=>
+</h4>
+</body>
+</html>

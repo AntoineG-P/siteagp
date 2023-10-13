@@ -1,0 +1,34 @@
+body {
+	background-color: silver;
+	text-align: center;
+	/*Servait à voir comment mettre une image en arrière-plan, c'est inutile pour le moment. Comme ça ne cause pas de problèmes, je laisse ça là pour le moment.*/
+	background-image:url("arriereplantest.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	}
+
+/*Tailles, couleurs, styles et polices du texte*/
+
+/*Questions*/
+legend{
+	font-size: 110%;
+	text-decoration-line: underline;
+	font-style:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+/*Choix possibles*/
+label{
+	font-size: 90%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Corrigé*/
+h2{ color: red;
+	font-style: italic;
+	font-size: 90%;
+	font-family: Arial, Helvetica, sans-serif;
+	}

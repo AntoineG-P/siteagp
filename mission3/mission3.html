@@ -1,0 +1,136 @@
+<html>
+<head>
+<metacharset="utf-8">
+<link rel="stylesheet" href="style.css"/>
+<title> QCM </title>
+</head>
+<body>
+<h1> QCM </h1>
+<h3> 
+<div>
+<!--Question 1-->
+ <legend> 1) Quel est le nom du lycée?</legend>
+    <input type="radio" id="q1_1" name="r1"/>
+    <label for="q1_1">Lycée Vilgénis</label>
+    <input type="radio" id="q1_2" name="r1" />
+    <label for="q1_2">Lycée Camille Claudel</label>
+    <input type="radio" id="q1_3" name="r1" />
+    <label for="q1_3">Lycée Parc de Vilgénis</label>
+</div>
+<br>
+<div>
+<!--Question 2-->
+ <legend> 2) Quel est le nom de la filière?</legend>
+    <input type="radio" id="q2_1" name="r2"/>
+    <label for="q2_1">BTS SIO</label>
+    <input type="radio" id="q2_2" name="r2" />
+    <label for="q2_2">BUT SIO</label>
+    <input type="radio" id="q2_3" name="r2" />
+    <label for="q2_3">BTS SNT</label>
+</div> 
+<br>
+<div>
+<!--Question 3-->
+ <legend> 3) Quel est le nom de l'option de la filière?</legend>
+    <input type="radio" id="q3_1" name="r3"/>
+    <label for="q3_1">SLAM</label>
+    <input type="radio" id="q3_2" name="r3" />
+    <label for="q3_2">SLUM</label>
+    <input type="radio" id="q3_3" name="r3" />
+    <label for="q3_3">CIEL</label>
+</div> 
+<br>
+<div>
+<!--Question 4-->
+ <legend> 4) Quel est le type de mémoire d'ordinateur qui est variable mais perdue quand on éteint l'ordinateur?</legend>
+    <input type="radio" id="q4_1" name="r4"/>
+    <label for="q4_1">La RUM</label>
+    <input type="radio" id="q4_2" name="r4" />
+    <label for="q4_2">La RAM</label>
+    <input type="radio" id="q4_3" name="r4" />
+    <label for="q4_3">La ROM</label>
+</div> 
+<br>
+<div>
+<!--Question 5-->
+ <legend> 5) Quel est le type de mémoire d'ordinateur qui ne peut pas être changée mais ne se perds pas en éteignant l'ordinateur?</legend>
+    <input type="radio" id="q5_1" name="r5"/>
+    <label for="q5_1">La ROM</label>
+    <input type="radio" id="q5_2" name="r5" />
+    <label for="q5_2">La RUM</label>
+    <input type="radio" id="q5_3" name="r5" />
+    <label for="q5_3">La RAM</label>
+</div> 
+<br>
+<div>
+<!--Question 6-->
+ <legend> 6) Quel est l'autre nom du processeur de l'ordinateur?</legend>
+    <input type="radio" id="q6_1" name="r6"/>
+    <label for="q6_1"> Le CPU</label>
+    <input type="radio" id="q6_2" name="r6" />
+    <label for="q6_2"> Le GPU</label>
+    <input type="radio" id="q6_3" name="r6" />
+    <label for="q6_3"> Le DPU</label>
+</div> 
+<br>
+<div>
+<!--Question 7-->
+ <legend> 7) Quel est le système opératoire d'un ordinateur?</legend>
+    <input type="radio" id="q7_1" name="r7"/>
+    <label for="q7_1">Le GIOS</label>
+    <input type="radio" id="q7_2" name="r7" />
+    <label for="q7_2">le DIOS</label>
+    <input type="radio" id="q7_3" name="r7" />
+    <label for="q7_3">Le BIOS</label>
+</div> 
+<br>
+<div>
+<!--Question 8-->
+ <legend> 8) Quel est le nom du circuit imprimé contenant le processeur?</legend>
+    <input type="radio" id="q8_1" name="r8"/>
+    <label for="q8_1">La carte père</label>
+    <input type="radio" id="q8_2" name="r8" />
+    <label for="q8_2">La carte mère</label>
+    <input type="radio" id="q8_3" name="r8" />
+    <label for="q8_3">La carte principale</label>
+</div> 
+<br>
+<div>
+<!--Question 9-->
+ <legend> 9) Quel est le travail de l'ALU? (Plusieurs réponses possibles)</legend>
+    <input type="checkbox" id="q9_1" name="c9"/>
+    <label for="q9_1"> D'exécuter des programmes</label>
+    <input type="checkbox" id="q9_2" name="c9" />
+    <label for="q9_2"> D'éxecuter des calculs mathématiques</label>
+    <input type="checkbox" id="q9_3" name="c9" />
+    <label for="q9_3">D'éxecuter des opérations logiques</label>
+</div> 
+<br>
+<div>
+<!--Question 10-->
+ <legend> 10) Dans quel language de code change-on la couleur de texte d'une page HTML?</legend>
+    <input type="radio" id="q10_1" name="r10"/>
+    <label for="q10_1">En HTML</label>
+    <input type="radio" id="q10_2" name="r10" />
+    <label for="q10_2">En CSS</label>
+    <input type="radio" id="q10_3" name="r10" />
+    <label for="q10_3">En JavaScript</label>
+</div> 
+<br>
+
+<!--Lien vers le corrigé-->
+<button class="styleda" type="button" onclick=" window.open('corrige.html', '_blank');" >Corrigé</button>
+
+ <!--Sert pour effacer la sélection des boutons-->
+<button onclick="#" id="clear-button">Effacer la sélection</button>
+<script type="text/javascript">
+    document.getElementById('clear-button').addEventListener('click', function () {
+      ["q1_1", "q1_2", "q1_3","q2_1", "q2_2", "q2_3","q3_1", "q3_2", "q3_3","q4_1", "q4_2", "q4_3","q5_1", "q5_2", "q5_3","q6_1", "q6_2", "q6_3","q7_1", "q7_2", "q7_3","q8_1", "q8_2", "q8_3","q9_1", "q9_2", "q9_3","q10_1", "q10_2", "q10_3"].forEach(function(id) {
+        document.getElementById(id).checked = false;
+      });
+      return false;
+    })
+  </script>
+</h3>
+</body>
+</html>
