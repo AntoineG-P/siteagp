@@ -1,10 +1,12 @@
 document.body.style.backgroundColor = "grey";
 
 function mention(x) {
-    if (x>=10 && x<14) {res.value="Admis Passable";}
+    if (x>20) {res.value("Erreur")}
+    else if (x>=10 && x<14) {res.value="Admis Passable";}
     else if (x>=14 && x<16) {res.value="Admis Bien";} 
     else if (x>=16) {res.value="Admis Très Bien";} 
-    else {res.value="Rattrapages";}}
+    else if (x<10 && x>=8) {res.value="Rattrapage"}
+    else {res.value="Redoublement...";}}
 
 function calcul(){
     var n1=Number(document.getElementById("n1").value);
