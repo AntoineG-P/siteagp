@@ -1,0 +1,45 @@
+body{text-align:center;
+    font-size: 30px;
+    background-color: grey;}
+
+div#menu{width:150px;
+    margin:40px;}
+    
+    div#menu ul{
+        padding:0;
+        width:200px;
+        border:1px solid;
+        box-shadow: 10px 10px 5px black;
+        background-color: white;}
+    
+    div#menu ul li {
+        position:relative;
+        list-style: none;
+        border-bottom:1px solid;}
+    
+    div#menu li a{
+        text-decoration: none;}
+    
+    div#menu ul ul {
+        position: absolute;
+        top:0;
+        left:200px;
+        display:none;}
+    
+    div#menu ul.niveau1 li.sousmenu:hover ul.niveau2 {display:block;}
+    
+    div#menu a{color:#000000}
+    div#menu li:hover{background:#EDD;}
+    
+    div#menu li.sousmenu:hover{background:#EBB;}
+    
+    div#menu li a {
+        text-decoration:none;
+        padding:4px 0 4px 8px;
+        display:block;
+        border-left:8px solid #BBB;
+        width:175px;}
+    
+    div#menu li a:hover{border-left-color:red;}
+    
+    div#menu ul ul li a:hover {border-left-color: #00FF00;}

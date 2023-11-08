@@ -1,0 +1,16 @@
+body{background-color: grey;}
+header{text-align:center;
+background-color: white;
+padding:10px;
+border:3px solid black;
+border-radius: 15px;}
+
+footer{text-align: center;
+background-color: white;
+padding:10px;
+border:3px solid black;
+border-radius: 15px;
+clear:both;}
+
+iframe{float:left;
+margin:10px;}
