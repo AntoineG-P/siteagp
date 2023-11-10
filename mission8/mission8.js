@@ -45,6 +45,8 @@ function f3(){
  
  function f7(){document.getElementById('cocktail').innerText = 'Long Island Iced Tea';}
  
+ function f7site(){window.location.href="ex7.html"}
+
  function f8(){
     for(let i=10;i<=1000;i+=10){console.log(i);}}
  
