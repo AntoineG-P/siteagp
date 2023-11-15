@@ -1,0 +1,78 @@
+
+header {
+    background-color: grey;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+h2{font-size:13px;
+}
+
+h3{font-weight:normal;
+   float:right;
+}
+
+h4{font-weight:normal;}
+
+.column th {border-bottom: 3px solid grey;}
+
+body {
+    width: 70%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+}
+
+.pay th{background-color:grey;
+       color:white;
+}
+
+.pay td{background-color:white;}
+
+.pay table tr:nth-child(odd) td {
+    background-color: lightgrey;
+}
+.pay, .pay th, .pay td {border:1px solid grey;}
+
+.total{float:right;
+}
+
+.page{border:5px solid black;
+    border-radius:10px;
+    background-color:lightblue;
+}
+
+.b {
+    border-bottom: 3px solid grey;
+}
+
+.res{background-color:lightcoral;
+     border-bottom:3px solid red;
+}
