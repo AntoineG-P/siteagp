@@ -7,153 +7,77 @@
         <title> Index </title>
 </head>
 <body>
-    <div class="page">
-        <header>
-            <h2>Nom de la compagnie</h2>
-            <h2>Adresse postale <br> Détails du contact</h2>
-        </header>
-        <br>
-        <h3><i>Conditions de paiement, par exemple: dû dans X jours</i></h3><br>
-        <div class="row">
-            <div class="column">
-                <table>
-                    <tr>
-                        <th>Destinataire</th>
-                    </tr>
-                    <tr>
-                        <td>Nom</td>
-                        <td>Nom</td>
-                    </tr>
-                    <tr>
-                        <td>Nom de la société</td>
-                        <td>Nom de la société</td>
-                    </tr>
-                    <tr>
-                        <td>Adresse postale</td>
-                        <td>Adresse postale</td>
-                    </tr>
-                    <tr>
-                        <td>Téléphone</td>
-                        <td>Téléphone</td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td>Email</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="column">
-                <table>
-                    <tr>
-                        <th>Envoyez à</th>
-                    </tr>
-                    <tr>
-                        <td>Nom</td>
-                        <td>Nom</td>
-                    </tr>
-                    <tr>
-                        <td>Nom de la société</td>
-                        <td>Nom de la société</td>
-                    </tr>
-                    <tr>
-                        <td>Adresse postale</td>
-                        <td>Adresse postale</td>
-                    </tr>
-                    <tr>
-                        <td>Téléphone</td>
-                        <td>Téléphone</td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td>Email</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <br>
-        <div class="pay">
-            <table>
-                <tr>
-                    <th>DESCRIPTION</th>
-                    <th>QUANTITE</th>
-                    <th>PRIX UNITAIRE</th>
-                    <th>TOTAL</th>
-                </tr>
-                <tr>
-                    <td>desc1</td>
-                    <td>12</td>
-                    <td>120</td>
-                    <td>1440</td>
-                </tr>
-                <tr>
-                    <td>desc2</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>desc3</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>desc3</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>desc4</td>
-                    <td>12</td>
-                    <td>2</td>
-                    <td>24</td>
-                </tr>
-            </table>
-        </div>
+    <table>
+        <thead>
+            <tr class="row">
+                <th>DESCRIPTION</th>
+                <th>QUANTITE</th>
+                <th>PRIX UNITAIRE</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody id="table_inv">
+            <tr class="row">
+                <td><input type="text" name="desc1" class="desc" value="desc"></td>
+                <td><input type="text" name="qte" class="qte" value="0"></td>
+                <td><input type="text" name="prix" class="prix" value="0"></td>
+                <td><input type="text" name="total" class="total" readonly="readonly" value="0.00" /></td>
+            </tr>
 
-        <h4>Remarques, notes et instructions de paiement</h4>
+            <tr class="row">
+                <td><input type="text" name="desc2" class="desc" value="desc"></td>
+                <td><input type="text" name="qte" class="qte" value="0"></td>
+                <td><input type="text" name="prix" class="prix" value="0"></td>
+                <td><input type="text" name="total" class="total"readonly="readonly" value="0.00" /></td>
+            </tr>
 
-        <div class="total">
-            <table>
-                <tr>
-                    <td>SOUS-TOTAL</td>
-                    <td>1464</td>
-                </tr>
-                <tr>
-                    <td>REMISE</td>
-                    <td>10.00</td>
-                </tr>
-                <tr>
-                    <td>SOUS-TOTAL MOIS LES REMISES</td>
-                    <td>1317.6</td>
-                </tr>
-                <tr>
-                    <td>TAUX D'IMPOSITION'</td>
-                    <td>10.00%</td>
-                </tr>
-                <tr>
-                    <td>TAXE TOTALE</td>
-                    <td>146.4</td>
-                </tr>
-                <tr class="b">
-                    <td>EXPEDITO,MANUTENTION</td>
-                    <td>5.00</td>
-                </tr>
-                <tr>
-                    <td>SOLDE DU</td>
-                    <td class="res">1469</td>
-                </tr>
-            </table>
+            <tr class="row" id="modeleLigne">
+                <td><input type="text" name="desc3" class="desc" value="desc"></td>
+                <td><input type="text" name="qte" class="qte" value="0"></td>
+                <td><input type="text" name="prix" class="prix" value="0"></td>
+                <td><input type="text" name="total" class="total" readonly="readonly" value="0.00" /></td>
+            </tr>
 
-        </div>
+            <tr class="row lastrow" id="lastLigne">
+                <td><input type="text" name="desc4" clss="desc" value="desc"></td>
+                <td><input type="text" name="qte" class="qte" value="0"></td>
+                <td><input type="text" name="prix" class="prix" value="0"></td>
+                <td><input type="text" name="total" class="total" readonly="readonly" value="0.00" /></td>
+            </tr>
+        </tbody>
+    </table>
 
-        <br><br><br><br><br><br><br>
-        <button onclick="calc()"> <h4> Calculer </h4> </button>
-        <button onclick="addline()"> <h4> Ajouter une ligne </h4> </button>
-        <button onclick="remplir()"> <h4> Remplir automatiquement </h4> </button>
-        <button onclick="annul()"> <h4> Annuler </h4> </button>
-    </div>
+
+<table>
+            <tr>
+                <td>SOUS-TOTAL</td>
+                <td><input type="text" name="stot" readonly="readonly" value="0" /></td>
+            </tr>
+            <tr>
+                <td>REMISE</td>
+                <td><input type="text" name="remise" class="remise" value="0"></td>
+            </tr>
+            <tr>
+                <td>SOUS-TOTAL MOINS LES REMISES</td>
+                <td><input type="text" name="stotsr" readonly="readonly" value="0" /></td>
+            </tr>
+            <tr>
+                <td>TAUX D'IMPOSITION'</td>
+                <td><input type="text" name="impo" class="impo" value="0"></td>
+            </tr>
+            <tr class="b">
+                <td>TAXE TOTALE</td>
+                <td><input type="text" name="tax" readonly="readonly" value="0" /></td>
+            </tr>
+            <tr>
+                <td>SOLDE DU</td>
+                <td class="sold"><strong id="sold"> 0 </strong></td>
+            </tr>
+        </table>
+
+    <br><br>
+    <button onclick="calcul()"> <h4> Calculer </h4> </button>
+    <button onclick="ajouterLigne()"> <h4> Ajouter une ligne </h4> </button>
+    <button onclick="remplir()"> <h4> Remplir automatiquement </h4> </button>
 </body>
 </html>
-
